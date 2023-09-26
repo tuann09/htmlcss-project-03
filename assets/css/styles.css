@@ -300,7 +300,7 @@ a {
 /*----------Work--------*/
 .work {
     padding: 110px 0;
-    background: #fff;
+    background: #f6fbff;
 }
 .work__list {
     margin-top: 86px;
@@ -345,4 +345,37 @@ a {
 }
 .work__desc {
     width: 468px;
+}
+/*----------Features--------*/
+.feature {
+    padding: 170px 0 85px 0;
+}
+.feature__inner {
+    display: flex;
+    column-gap: 130px;
+    align-items: center;
+}
+.feature__media {
+    width: 49%;
+}
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+    padding-right: 58px;
+}
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.feature__img:last-child {
+    width: 332px;
+    height: 370px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.feature__cta {
+    margin-top: 38px;
 }
