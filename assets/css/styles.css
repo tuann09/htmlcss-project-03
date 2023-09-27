@@ -18,6 +18,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
 .logo__circle::before,
 .logo__circle::after {
     content: " ";
@@ -106,6 +113,7 @@ a {
     margin-left: 0.6em;
     font-size: 1.8em;
     font-weight: 400;
+    font-family: "Sora", sans-serif;
 }
 .logo__brand--small {
     font-size: 1.2em;
@@ -618,4 +626,115 @@ a {
     max-width: 617px;
     font-size: 1.6rem;
     margin: 18px auto 38px;
+}
+/*----------Footer--------*/
+.footer {
+    background: #10375c;
+    padding: 100px 0 42px;
+    font-family: "Open Sans", sans-serif;
+}
+.footer__row {
+    display: grid;
+    column-gap: 78px;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+}
+.footer__desc {
+    color: #a9b3bb;
+    margin-top: 22px;
+    font-size: 1.6rem;
+
+    font-weight: 400;
+    line-height: 175%;
+}
+.footer__heading {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+
+    font-weight: 500;
+    line-height: 175%;
+}
+.footer__list {
+    margin-bottom: 28px;
+}
+.footer__link {
+    color: #a9b3bb;
+
+    font-size: 1.4rem;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 185.714%;
+}
+.footer__link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer__item {
+    margin-bottom: 10px;
+}
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+.footer__social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #2e80ce;
+    transition: 0.25s;
+}
+.footer__social-btn:hover {
+    background-color: #2e80ce;
+    color: #fff;
+}
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+}
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+    padding: 0 10px;
+}
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+
+    font-size: 1.4rem;
+
+    font-weight: 400;
+    line-height: 185.714%;
+}
+.footer-form__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 108px;
+    height: 46px;
+
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+.footer__copyright {
+    border-top: 1px solid #406181;
+}
+.footer__copyright-text {
+    color: #aab3ba;
+    text-align: center;
+
+    font-size: 1.4rem;
+    margin-top: 28px;
+    font-weight: 400;
+    line-height: 185.714%;
 }
